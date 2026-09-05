@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750">
+<rect width="1000" height="750" fill="#f5f7fa"/>
+<style>.t{font-family:Arial,sans-serif;fill:#122135}.m{font-family:Arial,sans-serif;fill:#445468}.a{fill:#196e5a}.card{fill:#fff;stroke:#dce1e8;stroke-width:1}</style>
+<text x="55" y="90" class="t" font-size="42" font-weight="700">Auditable Post-Training Pipeline</text>
+<text x="58" y="130" class="m" font-size="20">From governed data to model quality and serving evidence</text>
+<g>
+<rect x="38" y="250" width="135" height="145" rx="18" class="card"/><rect x="197" y="250" width="135" height="145" rx="18" class="card"/><rect x="356" y="250" width="135" height="145" rx="18" class="card"/><rect x="515" y="250" width="135" height="145" rx="18" class="card"/><rect x="674" y="250" width="135" height="145" rx="18" class="card"/><rect x="833" y="250" width="135" height="145" rx="18" class="card"/>
+</g>
+<g class="t" font-weight="700" font-size="19"><text x="54" y="292">Dataset</text><text x="213" y="292">27B SFT</text><text x="372" y="292">Evaluation</text><text x="531" y="292">Blind Review</text><text x="690" y="292">vLLM</text><text x="849" y="292">Benchmark</text></g>
+<g class="m" font-size="14"><text x="54" y="335">Validation</text><text x="54" y="360">&amp; hashing</text><text x="213" y="335">FSDP-QLoRA</text><text x="213" y="360">4×4090</text><text x="372" y="335">Base vs SFT</text><text x="372" y="360">same conditions</text><text x="531" y="335">Failure taxonomy</text><text x="531" y="360">&amp; regression</text><text x="690" y="335">OpenAI-compatible</text><text x="690" y="360">multi-GPU API</text><text x="849" y="335">Latency · throughput</text><text x="849" y="360">GPU telemetry</text></g>
+<g stroke="#196e5a" stroke-width="4" fill="#196e5a">
+<line x1="179" y1="322" x2="191" y2="322"/><polygon points="191,322 184,316 184,328"/><line x1="338" y1="322" x2="350" y2="322"/><polygon points="350,322 343,316 343,328"/><line x1="497" y1="322" x2="509" y2="322"/><polygon points="509,322 502,316 502,328"/><line x1="656" y1="322" x2="668" y2="322"/><polygon points="668,322 661,316 661,328"/><line x1="815" y1="322" x2="827" y2="322"/><polygon points="827,322 820,316 820,328"/>
+</g>
+<rect x="55" y="470" width="890" height="140" rx="20" class="card"/>
+<text x="78" y="510" class="t" font-size="22" font-weight="700">Evidence chain</text>
+<text x="78" y="560" class="a" font-size="19">Dataset SHA → Config SHA → Adapter SHA → Benchmark SHA → Evidence Registry</text>
+<text x="58" y="685" class="m" font-size="17">Private prompts, model outputs, weights and credentials remain outside the public case study.</text>
+</svg>
