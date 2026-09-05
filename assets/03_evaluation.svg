@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750">
+<rect width="1000" height="750" fill="#f5f7fa"/>
+<style>.t{font-family:Arial,sans-serif;fill:#122135}.m{font-family:Arial,sans-serif;fill:#445468}.a{fill:#196e5a}.card{fill:#fff;stroke:#dce1e8;stroke-width:1}</style>
+<text x="55" y="90" class="t" font-size="42" font-weight="700">Evaluation Designed to Find Regressions</text>
+<text x="58" y="130" class="m" font-size="20">Measure what changed — including failures and trade-offs.</text>
+<rect x="55" y="175" width="415" height="450" rx="22" class="card"/>
+<rect x="500" y="175" width="445" height="450" rx="22" class="card"/>
+<text x="82" y="215" class="t" font-size="23" font-weight="700">Latest comprehensive protocol</text>
+<text x="82" y="305" class="a" font-size="42" font-weight="700">1,000</text><text x="190" y="303" class="m" font-size="17">evaluation cases</text>
+<text x="82" y="390" class="a" font-size="42" font-weight="700">2,000</text><text x="190" y="388" class="m" font-size="17">blinded candidate reviews</text>
+<text x="82" y="475" class="a" font-size="42" font-weight="700">3</text><text x="120" y="472" class="m" font-size="17">tracks</text>
+<text x="82" y="520" class="m" font-size="16">No-RAG · Oracle-RAG · Retrieved-RAG</text>
+<text x="528" y="215" class="t" font-size="23" font-weight="700">What the evaluation separates</text>
+<g class="t" font-size="18" font-weight="700"><text x="528" y="285">No-RAG</text><text x="528" y="355">Oracle-RAG</text><text x="528" y="425">Retrieved-RAG</text><text x="528" y="495">Failure taxonomy</text><text x="528" y="565">Bounded output</text></g>
+<g class="m" font-size="14"><text x="528" y="312">What the fine-tuned model learned</text><text x="528" y="382">Can the model use correct evidence?</text><text x="528" y="452">End-to-end impact of retrieval loss</text><text x="528" y="522">Factual errors, missing conditions, incompleteness</text><text x="528" y="592">Truncation tracked instead of hidden</text></g>
+<text x="58" y="685" class="m" font-size="17">Engineering takeaway: measurable gains and remaining failures are both preserved as evidence.</text>
+</svg>
