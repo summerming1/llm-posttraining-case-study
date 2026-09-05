@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750">
+<rect width="1000" height="750" fill="#f5f7fa"/>
+<style>.t{font-family:Arial,sans-serif;fill:#122135}.m{font-family:Arial,sans-serif;fill:#445468}.a{fill:#196e5a}.card{fill:#fff;stroke:#dce1e8;stroke-width:1}</style>
+<text x="55" y="90" class="t" font-size="42" font-weight="700">Multi-GPU vLLM Deployment Benchmark</text>
+<text x="58" y="130" class="m" font-size="20">Realistic metallurgy QA workload · 4×RTX 4090 · tensor parallel = 4</text>
+<g class="card"><rect x="55" y="175" width="200" height="110" rx="18"/><rect x="275" y="175" width="200" height="110" rx="18"/><rect x="495" y="175" width="200" height="110" rx="18"/><rect x="715" y="175" width="230" height="110" rx="18"/></g>
+<g class="t" font-size="32" font-weight="700"><text x="75" y="225">1–32</text><text x="295" y="225">300s</text><text x="515" y="225">0%</text><text x="735" y="225">≈21.77 GiB</text></g>
+<g class="m" font-size="16"><text x="75" y="260">Concurrency sweep</text><text x="295" y="260">Sustained test</text><text x="515" y="260">Observed request errors</text><text x="735" y="260">Peak / GPU</text></g>
+<rect x="55" y="320" width="555" height="320" rx="20" class="card"/>
+<text x="80" y="355" class="t" font-size="20" font-weight="700">Base model output throughput</text>
+<line x1="95" y1="590" x2="575" y2="590" stroke="#98a4b3" stroke-width="2"/><line x1="95" y1="390" x2="95" y2="590" stroke="#98a4b3" stroke-width="2"/>
+<polyline points="115,560 210,505 305,470 410,445 555,400" fill="none" stroke="#196e5a" stroke-width="5"/>
+<g fill="#196e5a"><circle cx="115" cy="560" r="6"/><circle cx="210" cy="505" r="6"/><circle cx="305" cy="470" r="6"/><circle cx="410" cy="445" r="6"/><circle cx="555" cy="400" r="6"/></g>
+<g class="m" font-size="14"><text x="108" y="615">1</text><text x="203" y="615">4</text><text x="298" y="615">8</text><text x="402" y="615">16</text><text x="545" y="615">32</text><text x="250" y="635">Concurrency</text><text x="105" y="548">52</text><text x="215" y="493">149</text><text x="310" y="458">201</text><text x="415" y="433">230</text><text x="560" y="388">298 tok/s</text></g>
+<rect x="635" y="320" width="310" height="320" rx="20" class="card"/>
+<text x="665" y="360" class="t" font-size="22" font-weight="700">Recorded telemetry</text>
+<g class="t" font-size="17"><text x="665" y="415">TTFT p50 / p95 / p99</text><text x="665" y="455">TPOT &amp; inter-token latency</text><text x="665" y="495">Requests/s &amp; tokens/s</text><text x="665" y="535">GPU utilization &amp; memory</text><text x="665" y="575">Aggregate GPU power</text><text x="665" y="615">Sustained stability</text></g>
+<text x="58" y="685" class="m" font-size="16">Realistic output lengths are preserved; controlled fixed-output tests are used separately for LoRA-overhead isolation.</text>
+</svg>
