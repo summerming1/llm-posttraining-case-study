@@ -4,7 +4,7 @@ A public, sanitized case study showing an end-to-end post-training workflow for 
 
 This repository is a portfolio case study, not the private training repository. It intentionally excludes training data, raw prompts/responses, model weights, credentials, private server paths, and customer/company information.
 
-![Case study cover](assets/01_cover.png)
+![Case study cover](assets/01_cover.svg)
 
 ## What this case study demonstrates
 
@@ -20,7 +20,7 @@ This repository is a portfolio case study, not the private training repository. 
 
 ## End-to-end workflow
 
-![Post-training pipeline](assets/02_pipeline.png)
+![Post-training pipeline](assets/02_pipeline.svg)
 
 The key engineering goal was not simply to produce a LoRA adapter. The workflow was designed to answer:
 
@@ -49,7 +49,7 @@ Training loss is treated only as optimization evidence, not as proof of model-qu
 
 ## Evaluation engineering
 
-![Evaluation design](assets/03_evaluation.png)
+![Evaluation design](assets/03_evaluation.svg)
 
 The evaluation stack evolved from a source-disjoint Base-vs-SFT benchmark into a broader three-track protocol:
 
@@ -63,7 +63,7 @@ A recent bounded-output review covered **1,000 evaluation cases** and **2,000 bl
 
 ## Deployment benchmark
 
-![Deployment benchmark](assets/04_deployment.png)
+![Deployment benchmark](assets/04_deployment.svg)
 
 The 27B Base and SFT endpoints were benchmarked with vLLM on 4×RTX 4090 using tensor parallelism.
 
