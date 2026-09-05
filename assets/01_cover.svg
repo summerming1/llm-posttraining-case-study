@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750">
+<rect width="1000" height="750" fill="#f5f7fa"/>
+<style>.t{font-family:Arial,sans-serif;fill:#122135}.m{font-family:Arial,sans-serif;fill:#445468}.a{fill:#196e5a}.card{fill:#fff;stroke:#dce1e8;stroke-width:1}</style>
+<text x="55" y="90" class="t" font-size="42" font-weight="700">27B LLM Fine-Tuning, Evaluation &amp; Deployment</text>
+<text x="58" y="130" class="m" font-size="20">End-to-end post-training pipeline on 4×RTX 4090</text>
+<rect x="55" y="145" width="890" height="6" rx="3" class="a"/>
+<g class="card"><rect x="55" y="190" width="205" height="120" rx="18"/><rect x="280" y="190" width="205" height="120" rx="18"/><rect x="505" y="190" width="205" height="120" rx="18"/><rect x="730" y="190" width="215" height="120" rx="18"/></g>
+<g class="t" font-weight="700" font-size="34"><text x="75" y="240">27B</text><text x="300" y="240">4×4090</text><text x="525" y="240">9,571</text><text x="750" y="240">1,000</text></g>
+<g class="m" font-size="16"><text x="75" y="278">Open-weight LLM</text><text x="300" y="278">FSDP-QLoRA</text><text x="525" y="278">Training samples</text><text x="750" y="278">3-track eval cases</text></g>
+<rect x="55" y="345" width="890" height="265" rx="22" class="card"/>
+<text x="85" y="390" class="t" font-size="24" font-weight="700">Capabilities demonstrated</text>
+<g class="t" font-size="18">
+<circle cx="96" cy="438" r="6" class="a"/><text x="114" y="444">LoRA / QLoRA fine-tuning</text>
+<circle cx="96" cy="481" r="6" class="a"/><text x="114" y="487">FSDP multi-GPU training</text>
+<circle cx="96" cy="524" r="6" class="a"/><text x="114" y="530">Base vs SFT blinded evaluation</text>
+<circle cx="96" cy="567" r="6" class="a"/><text x="114" y="573">RAG evaluation</text>
+<circle cx="526" cy="438" r="6" class="a"/><text x="544" y="444">vLLM multi-GPU serving</text>
+<circle cx="526" cy="481" r="6" class="a"/><text x="544" y="487">Deployment benchmarking</text>
+<circle cx="526" cy="524" r="6" class="a"/><text x="544" y="530">Artifact / config hashing</text>
+<circle cx="526" cy="567" r="6" class="a"/><text x="544" y="573">Evidence &amp; reproducibility controls</text>
+</g>
+<text x="58" y="690" class="m" font-size="18">PyTorch · Hugging Face · PEFT · FSDP · vLLM · RAG · LLM Evaluation</text>
+</svg>
