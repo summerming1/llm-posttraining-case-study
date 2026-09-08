@@ -6,6 +6,17 @@ This repository is a portfolio case study, not the private training repository. 
 
 ![Case study cover](assets/01_cover.svg)
 
+## 15-second verification map
+
+| Capability | Public evidence | What it demonstrates |
+|---|---|---|
+| Fine-tuning | [Training evidence summary](evidence/training-summary.md) | Executed 4-bit QLoRA / FSDP training setup, hardware, data counts, runtime and artifact controls |
+| Evaluation | [Evaluation evidence summary](evidence/evaluation-summary.md) | Base-vs-SFT and three-track evaluation methodology, blinded review and explicit limitations |
+| Deployment | [Deployment evidence summary](evidence/deployment-summary.md) | Multi-GPU vLLM serving, concurrency sweeps, sustained-load testing and GPU/runtime telemetry |
+| Full reasoning | [Full case study](case-study.md) | Design choices, interpretation boundaries and end-to-end workflow |
+
+**Fast snapshot:** Qwen3.8-27B · 4×RTX 4090 · FSDP-QLoRA · 9,571 training samples · controlled Base-vs-SFT evaluation · vLLM serving · concurrency 1/4/8/16/32 · 300-second sustained-load benchmark.
+
 ## What this case study demonstrates
 
 - **27B LLM post-training** with 4-bit **FSDP-QLoRA** on 4×RTX 4090
@@ -17,6 +28,10 @@ This repository is a portfolio case study, not the private training repository. 
 - Deployment benchmarks covering concurrency **1 / 4 / 8 / 16 / 32** plus sustained-load testing
 - TTFT, TPOT, ITL, throughput, GPU utilization, per-GPU memory, aggregate GPU power, and request-error tracking
 - Dataset/config/adapter/workload hashing and immutable experiment-evidence records
+
+## Engineering scope demonstrated here
+
+The case study covers more than the final adapter: distributed post-training configuration and execution, run/evidence controls, held-out Base-vs-SFT comparison, blinded-review workflow, RAG-separated evaluation, vLLM serving, and benchmark interpretation. Claims are deliberately separated into **optimization evidence**, **quality evidence**, and **deployment evidence** so a training loss or a single favorable example is never presented as proof of production quality.
 
 ## End-to-end workflow
 
@@ -114,6 +129,11 @@ I can apply the same engineering approach to scoped client projects involving:
 - vLLM deployment and multi-GPU inference benchmarking
 - Private open-weight model serving through OpenAI-compatible APIs
 - Experiment evidence, reproducibility and model go/no-go reporting
+
+## Related public engineering showcases
+
+- [Production RAG Agent](https://github.com/summerming1/production-rag-agent) — hybrid retrieval, RRF, reranking adapters, citations, retrieval evaluation, vLLM-compatible generation and bounded orchestration
+- [Industrial CV Production Pipeline](https://github.com/summerming1/industrial-cv-production-pipeline) — segmentation, ROI/spatial logic, time-based event detection and ONNX/TensorRT deployment patterns
 
 ## Privacy and scope
 
